@@ -148,6 +148,9 @@ Com base nos dados de vendas e nas análises logísticas, conseguimos traçar es
 
 🔹 **Previsão de Demanda** → Evitar rupturas de estoque e melhorar a experiência do cliente.
 
+---
+
+
 
 📌 _Cocriado com a ajuda do Grok-3 e ChatGPT._
 
