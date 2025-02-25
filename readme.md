@@ -1,155 +1,153 @@
-# Características
+# 📌 Características
 
-- A empresa foca apenas em fabricação de consoles, deixando a distribuição e venda para terceiros
-- Os produtos são vendidos globalmente
+✅ **Foco**: A empresa se concentra exclusivamente na fabricação de consoles, deixando a distribuição e venda para terceiros.
 
-# Objetivos
+✅ **Alcance Global**: Os produtos são vendidos em diversos países ao redor do mundo.
 
-- [x] Consolidar todas as bases de terceiros para realizar uma análise
-- [x] Transformar dados de vendasem informações relevantes para a fabricante
-- [x] Quais são os produtos mais populares em cada país
-- [x] Como otimizar o processo de transporte e logística até o momento da venda
+---
 
+# 🎯 Objetivos
 
+✔️ Consolidar todas as bases de terceiros para uma análise detalhada.
 
-# Transformando Dados de Vendas em Informações Relevantes
+✔️ Transformar dados de vendas em insights valiosos para a fabricante.
 
-O objetivo é transformar os dados de vendas em insights acionáveis para o fabricante de consoles, focando na identificação dos produtos mais populares em cada país e na otimização dos processos de transporte e logística até o ponto de venda.
+✔️ Identificar os produtos mais populares em cada país.
 
-Como a empresa se concentra apenas na fabricação e terceiriza a distribuição e vendas para terceiros, os insights serão adaptados para informar as estratégias de produção e fornecer recomendações baseadas em dados para seus parceiros.
-
-## Conjunto de Dados
-
-O conjunto de dados contém informações detalhadas de vendas, incluindo:
-
-- SKU
-- Produto vendido
-- Data da venda
-- Quantidade
-- Preço unitário
-- Preço total
-- Moeda
-- Local da venda
-- Detalhes de desconto
-- Demografia do comprador
-- País de entrega
-- ID da fatura
-
-Ao analisar esses dados, podemos extrair insights para apoiar o planejamento da produção do fabricante e a coordenação logística com os distribuidores terceirizados.
-
-## Objetivos Principais
-
-1. **Identificar os produtos mais populares em cada país** para orientar as prioridades de produção.
-2. **Otimizar os processos de transporte e logística até o ponto de venda** para melhorar a eficiência e reduzir custos para os parceiros de distribuição.
-
-## 1. Produtos Mais Populares em Cada País
-
-Para determinar os produtos mais populares, agregamos a quantidade total vendida para cada produto por país de entrega. A popularidade foi definida como o produto com o maior número total de unidades vendidas em cada país.
-
-### Metodologia
-
-1. Agrupar os dados: Agregação das vendas por "país de entrega" e "produto vendido".
-2. Somar quantidades: Cálculo do total de "quantidade" vendida para cada produto em cada país.
-3. Classificar produtos: Identificação do produto com o maior total de unidades vendidas por país.
-
-### Resultados por País
-
-#### Austrália:
-- **NEW MEGANIUM RG CubeXX**: 15 unidades
-- **NEW MEGANIUM RG35XX**: 2 unidades
-- **NEW MEGANIUM RG28XX**: 11 unidades
-- **MEGANIUM RG353M**: 5 unidades
-- **Mais Popular**: NEW MEGANIUM RG CubeXX (15 unidades)
-
-#### Reino Unido:
-- **NEW MEGANIUM RG35XX**: 7 unidades
-- **MEGANIUM RG353M**: 7 unidades
-- **NEW MEGANIUM RG CubeXX**: 1 unidade
-- **Mais Popular**: Empate entre NEW MEGANIUM RG35XX e MEGANIUM RG353M (7 unidades cada)
-
-#### Alemanha:
-- **NEW MEGANIUM RG 40XXV**: 8 unidades
-- **NEW MEGANIUM RG28XX**: 12 unidades
-- **NEW MEGANIUM RG CubeXX**: 10 unidades
-- **MEGANIUM RG353M**: 3 unidades
-- **Mais Popular**: NEW MEGANIUM RG28XX (12 unidades)
-
-#### Canadá:
-- **NEW MEGANIUM RG 40XXV**: 26 unidades
-- **NEW MEGANIUM RG28XX**: 11 unidades
-- **NEW MEGANIUM RG35XX**: 12 unidades
-- **NEW MEGANIUM RG CubeXX**: 2 unidades
-- **Mais Popular**: NEW MEGANIUM RG 40XXV (26 unidades)
-
-#### EUA:
-- **NEW MEGANIUM RG CubeXX**: 1 unidade
-- **MEGANIUM RG353M**: 4 unidades
-- **Mais Popular**: MEGANIUM RG353M (4 unidades)
-
-#### França:
-- **NEW MEGANIUM RG35XX**: 17 unidades
-- **NEW MEGANIUM RG 40XXV**: 4 unidades
-- **NEW MEGANIUM RG CubeXX**: 9 unidades
-- **NEW MEGANIUM RG28XX**: 9 unidades
-- **MEGANIUM RG353M**: 6 unidades
-- **Mais Popular**: NEW MEGANIUM RG35XX (17 unidades)
-
-#### Japão:
-- **NEW MEGANIUM RG 40XXV**: 14 unidades
-- **MEGANIUM RG353M**: 6 unidades
-- **NEW MEGANIUM RG28XX**: 5 unidades
-- **NEW MEGANIUM RG CubeXX**: 5 unidades
-- **Mais Popular**: NEW MEGANIUM RG 40XXV (14 unidades)
-
-### Insights e Recomendações
-
-- **Austrália**: Priorizar a produção do NEW MEGANIUM RG CubeXX.
-- **Reino Unido**: Equilibrar a produção de NEW MEGANIUM RG35XX e MEGANIUM RG353M.
-- **Alemanha**: Focar na produção do NEW MEGANIUM RG28XX.
-- **Canadá**: Priorizar o NEW MEGANIUM RG 40XXV.
-- **EUA**: Necessidade de mais dados, mas MEGANIUM RG353M lidera.
-- **França**: A maior demanda é por NEW MEGANIUM RG35XX.
-- **Japão**: Focar no NEW MEGANIUM RG 40XXV.
-
-## 2. Otimizando Transporte e Logística até o Ponto de Venda
-
-### Metodologia
-
-1. **Analisar o volume de envio**: Somar as unidades vendidas por país para entender a frequência e escala dos envios.
-2. **Identificar regiões de alta demanda**: Destacar países com maior volume de vendas para sugerir hubs logísticos.
-3. **Examinar o tempo das vendas**: Analisar padrões de "data da venda" para prever demanda e ajustar estoque.
-
-### Total de Unidades Vendidas por País
-
-- **Canadá**: 51 unidades
-- **França**: 45 unidades
-- **Austrália**: 33 unidades
-- **Alemanha**: 34 unidades
-- **Japão**: 30 unidades
-- **Reino Unido**: 15 unidades
-- **EUA**: 5 unidades
-
-### Estratégias de Otimização
-
-#### Hubs Regionais de Distribuição
-
-- **América do Norte**: Estabelecer um hub no Canadá para atender Canadá e EUA.
-- **Europa**: Criar um hub central na Alemanha ou França para consolidar envios para Europa.
-- **Ásia-Pacífico**: Um hub na Austrália pode servir Austrália e Japão.
-
-#### Consolidação de Envios
-
-Para países com alto volume de vendas (Canadá e França), agrupar envios para reduzir o número de entregas individuais.
-
-#### Previsão de Demanda
-
-Usar datas de vendas para prever futuras necessidades de estoque e garantir disponibilidade de produtos.
-
-### Recomendações
-
-1. **Estratégia Logística**: Sugerir hubs no Canadá, Alemanha ou França, e Austrália para reduzir custos e prazos de entrega.
-2. **Gestão de Estoque**: Compartilhar previsões de vendas com distribuidores para evitar excesso ou falta de produtos.
-3. **Eficiência de Custos**: Negociar tarifas de frete em massa para países com alto volume de vendas.
+✔️ Otimizar o transporte e logística até o ponto de venda.
 
 
 ---
+
+# 📊 Transformando Dados de Vendas em Informações Estratégicas
+
+Nosso objetivo é transformar os dados de vendas em **insights acionáveis** para a fabricante de consoles, possibilitando decisões informadas sobre produção e logística. Como a empresa terceiriza a distribuição e venda, os insights serão utilizados para aprimorar estratégias de fabricação e oferecer recomendações baseadas em dados para seus parceiros.
+
+## 📂 Conjunto de Dados
+
+O conjunto de dados inclui informações detalhadas sobre as vendas, como:
+
+- 🏷 **SKU**
+- 🎮 **Produto vendido**
+- 📅 **Data da venda**
+- 📦 **Quantidade vendida**
+- 💲 **Preço unitário e total**
+- 🌍 **Local da venda e país de entrega**
+- 🎯 **Detalhes de desconto**
+- 👤 **Demografia do comprador**
+- 🧾 **ID da fatura**
+
+Esses dados nos permitem identificar padrões de consumo e otimizar tanto a produção quanto a logística dos produtos.
+
+---
+
+## 📌 Objetivos Principais
+
+1️⃣ **Identificar os produtos mais populares em cada país** para alinhar prioridades de produção.
+
+2️⃣ **Otimizar transporte e logística até o ponto de venda** para melhorar eficiência e reduzir custos.
+
+
+---
+
+# 🌎 Produtos Mais Populares por País
+
+Para determinar os produtos mais vendidos, seguimos esta abordagem:
+
+🔹 **Agrupamos os dados** por "país de entrega" e "produto vendido".
+
+🔹 **Calculamos a soma total** de unidades vendidas por produto em cada país.
+
+🔹 **Identificamos os produtos mais populares** com base nas quantidades totais.
+
+
+### 🔥 Ranking por País
+
+| País         | Produto Mais Popular             | Unidades Vendidas |
+|-------------|---------------------------------|------------------|
+| 🇦🇺 Austrália | **NEW MEGANIUM RG CubeXX**     | 15               |
+| 🇬🇧 Reino Unido | **NEW MEGANIUM RG35XX** / **MEGANIUM RG353M** (Empate) | 7 cada            |
+| 🇩🇪 Alemanha  | **NEW MEGANIUM RG28XX**       | 12               |
+| 🇨🇦 Canadá    | **NEW MEGANIUM RG 40XXV**     | 26               |
+| 🇺🇸 EUA       | **MEGANIUM RG353M**           | 4                |
+| 🇫🇷 França    | **NEW MEGANIUM RG35XX**       | 17               |
+| 🇯🇵 Japão     | **NEW MEGANIUM RG 40XXV**     | 14               |
+
+### 🔍 Insights e Recomendações
+
+📌 **Austrália** → Focar na produção do NEW MEGANIUM RG CubeXX.
+
+📌 **Reino Unido** → Equilibrar a fabricação do RG35XX e RG353M.
+
+📌 **Alemanha** → Priorizar a fabricação do RG28XX.
+
+📌 **Canadá** → O RG 40XXV tem a maior demanda.
+
+📌 **EUA** → Poucos dados disponíveis, mas RG353M se destaca.
+
+📌 **França** → RG35XX lidera as vendas.
+
+📌 **Japão** → A maior demanda é pelo RG 40XXV.
+
+
+---
+
+# 🚛 Otimização de Transporte e Logística
+
+Para reduzir custos e melhorar a eficiência, seguimos as seguintes etapas:
+
+🔹 **Analisamos o volume de envio** somando todas as unidades vendidas por país.
+
+🔹 **Identificamos regiões de alta demanda** para sugerir hubs logísticos.
+
+🔹 **Examinamos o tempo das vendas** para prever demanda e ajustar estoques.
+
+
+### 🌍 Total de Unidades Vendidas por País
+
+| País         | Unidades Vendidas |
+|-------------|------------------|
+| 🇨🇦 Canadá    | 51               |
+| 🇫🇷 França    | 45               |
+| 🇦🇺 Austrália | 33               |
+| 🇩🇪 Alemanha  | 34               |
+| 🇯🇵 Japão     | 30               |
+| 🇬🇧 Reino Unido | 15               |
+| 🇺🇸 EUA       | 5                |
+
+### 🏢 Estratégias de Otimização
+
+📦 **Hubs Regionais de Distribuição**
+
+✅ **América do Norte** → Criar um hub no Canadá para atender Canadá e EUA.
+
+✅ **Europa** → Centralizar envios na Alemanha ou França para cobrir toda a região.
+
+✅ **Ásia-Pacífico** → Um hub na Austrália pode atender tanto Austrália quanto Japão.
+
+
+📦 **Consolidação de Envios**
+
+- Para mercados de alto volume (Canadá e França), agrupar envios reduz custos de frete.
+- Implementação de previsão de demanda para otimizar estoques e evitar falta/excesso de produtos.
+
+📦 **Redução de Custos**
+
+- Negociar tarifas de frete para países com grande volume de vendas.
+- Compartilhar previsões de demanda com distribuidores para melhor planejamento.
+
+---
+
+# 🤝 Conclusão
+
+Com base nos dados de vendas e nas análises logísticas, conseguimos traçar estratégias eficientes para produção, estoque e distribuição. A empresa pode se beneficiar de uma abordagem mais orientada a dados, garantindo que os produtos certos estejam disponíveis nos mercados certos, no momento ideal.
+
+🔹 **Decisões Baseadas em Dados** → Melhor alocação de recursos para fabricação.
+
+🔹 **Hubs Logísticos Inteligentes** → Redução de custos e otimização de prazos.
+
+🔹 **Previsão de Demanda** → Evitar rupturas de estoque e melhorar a experiência do cliente.
+
+
+📌 _Cocriado com a ajuda do Grok-3 e ChatGPT._
+
